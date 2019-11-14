@@ -1,1 +1,1 @@
-include ':app', ':customtoast2'
+include ':app', ':toastlibrary'

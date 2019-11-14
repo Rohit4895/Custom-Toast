@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/customToastLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_5dp"
+        android:paddingBottom="@dimen/padding_5dp"
+        android:paddingStart="@dimen/padding_20dp"
+        android:paddingEnd="@dimen/padding_20dp"
+        android:background="@drawable/shape_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_right"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/height_30dp"/>
+
+    <TextView
+            android:id="@+id/textMessage"
+            android:text="Verified"
+            android:textSize="@dimen/text_size_17sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
