@@ -11,13 +11,13 @@ class CustomToast(context: Context?) : Toast(context) {
 
     companion object{
 
-         val TYPE_NORMAL = 0
-         val TYPE_RIGHT = 1
-         val TYPE_WARNING = 2
-         val TYPE_WRONG = 3
+        public val TYPE_NORMAL = 0
+        public val TYPE_RIGHT = 1
+        public val TYPE_WARNING = 2
+        public val TYPE_WRONG = 3
 
-         val SHORT_DURATION = Toast.LENGTH_SHORT
-         val LONG_DURATION = Toast.LENGTH_LONG
+        public val SHORT_DURATION = Toast.LENGTH_SHORT
+        public val LONG_DURATION = Toast.LENGTH_LONG
 
         fun makeText(context: Context, message: String): CustomToast{
             return makeText(context,message, TYPE_NORMAL, SHORT_DURATION)
