@@ -19,15 +19,15 @@ class CustomToast(context: Context?) : Toast(context) {
         public val SHORT_DURATION = Toast.LENGTH_SHORT
         public val LONG_DURATION = Toast.LENGTH_LONG
 
-        fun makeText(context: Context, message: String): CustomToast{
+        public fun makeText(context: Context, message: String): CustomToast{
             return makeText(context,message, TYPE_NORMAL, SHORT_DURATION)
         }
 
-        fun makeText(context: Context, message: String, duration: Int): CustomToast{
+        public fun makeText(context: Context, message: String, duration: Int): CustomToast{
             return makeText(context,message, TYPE_NORMAL, duration)
         }
 
-        fun makeText(context: Context, message: String, toastType: Int, duration: Int): CustomToast{
+        public fun makeText(context: Context, message: String, toastType: Int, duration: Int): CustomToast{
 
             val mCustomToast: CustomToast = CustomToast(context)
             val layoutInflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
